@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Manrope", sans-serif;
+}
+body main {
+  width: min(100%, 375px);
+  height: 677px;
+  background-color: hsl(218, 23%, 16%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body main .advice-container {
+  width: 343px;
+  margin-top: 8rem;
+  text-align: center;
+  background-color: hsl(217, 19%, 24%);
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-top: 13rem;
+}
+body main .advice-container h1 {
+  font-size: 0.688rem;
+  font-weight: bolder;
+  color: hsl(150, 100%, 66%);
+  letter-spacing: 3.46px;
+  letter-spacing: 0.26px;
+}
+body main .advice-container div {
+  font-size: 1.5rem;
+  color: hsl(193, 38%, 86%);
+}
+body main .advice-container .pattern-divider-mobile {
+  margin: 2rem 0 -2.5rem 0;
+}
+body main .advice-container .pattern-divider-desktop {
+  display: none;
+}
+body main .advice-container button {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: hsl(150, 100%, 66%);
+  border: none;
+  position: relative;
+  top: 4rem;
+}
+@media screen and (min-width: 1440px) {
+  body main {
+    width: 1440px;
+    height: 810px;
+  }
+  body main .advice-container {
+    width: 540px;
+  }
+  body main .advice-container h1 {
+    font-size: 0.813rem;
+  }
+  body main .advice-container div {
+    font-size: 1.75rem;
+  }
+  body main .advice-container .pattern-divider-mobile {
+    display: none;
+  }
+  body main .advice-container .pattern-divider-desktop {
+    display: inline-block;
+    margin: 2rem 0 -2rem 0;
+  }
+  body main .advice-container button {
+    height: 54px;
+  }
+  body main .advice-container button:hover {
+    cursor: pointer;
+    box-shadow: 1px 1px 3rem hsl(150, 100%, 66%);
+  }
+}/*# sourceMappingURL=styles.css.map */
